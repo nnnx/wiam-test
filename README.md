@@ -5,6 +5,7 @@
 ```
 docker-compose build
 docker-compose up -d
+docker-compose exec php-fpm composer install
 docker-compose exec php-fpm php yii migrate --interactive=0
 ```
 
